@@ -1,5 +1,4 @@
 #!/bin/
-#uuuuuuuuuuuuuuuuuuuuuuuu
 
 SOURCE_DIR="/"
 
