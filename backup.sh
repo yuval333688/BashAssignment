@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/
+#uuuuuuuuuuuuuuuuuuuuuuuu
 
 SOURCE_DIR="/"
 
