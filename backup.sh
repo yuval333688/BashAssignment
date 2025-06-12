@@ -1,9 +1,13 @@
-#!/bin/
+#!/bin/bash
 
-SOURCE_DIR="/"
+BACKUP_DIR="BACKUPIR"
+mkdir -p "$BACKUP_DIR"
+BACKUP_FILE="$BACKUP_DIR/backup_$(date +%Y-%m-%d_%H-%M-%S).tar.gz"
 
-BACKUP_FILE="/backup/backup_$(date +%Y-%m-%d_%H-%M-%S).tar.gz"
 
-tar -czvf "$BACKUP_FILE" -C "$(dirname "$SOURCE_DIR")" "$(basename "$SOURCE_DIR")"
+
+
+tar --exclude="$BACKUP_DIR" -czvf "$BACKUP_FILE" -C "." .
+
 
 echo "גיבוי הושלם בהצלחה: $BACKUP_FILE"
